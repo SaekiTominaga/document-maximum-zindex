@@ -1,5 +1,5 @@
 {
-	"name": "@saekitominaga/document-zindex",
+	"name": "@saekitominaga/document-maximum-zindex",
 	"version": "1.0.0",
 	"description": "Get the maximum value of z-index in the Document.",
 	"type": "module",
@@ -31,14 +31,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/SaekiTominaga/document-zindex.git"
+		"url": "git+https://github.com/SaekiTominaga/document-maximum-zindex.git"
 	},
 	"author": "Saeki Tominaga",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/SaekiTominaga/document-zindex/issues"
+		"url": "https://github.com/SaekiTominaga/document-maximum-zindex/issues"
 	},
-	"homepage": "https://github.com/SaekiTominaga/document-zindex#readme",
+	"homepage": "https://github.com/SaekiTominaga/document-maximum-zindex#readme",
 	"publishConfig": {
 		"access": "public"
 	}
