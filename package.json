@@ -24,9 +24,9 @@
 		"_ts-watch:tsc": "tsc -w",
 		"_ts-watch:rename": "onchange -f add -v dist/**/*.mjs.js -- renamer --force --find .mjs.js --replace .mjs dist/**/*",
 		"_ts-watch:compress": "onchange -f add -f change -v dist/DocumentZindex.mjs -- brotlin compress dist/DocumentZindex.mjs -m 1",
-		"_ts-watch:minify": "onchange -f add -f change -v dist/DocumentZindex.mjs -- terser dist/DocumentZindex.mjs -o dist/DocumentZindex.min.mjs -c ecma=2020 --mangle --ecma 2020 --module --source-map base=dist,filename=DocumentId.min.mjs,includeSources",
+		"_ts-watch:minify": "onchange -f add -f change -v dist/DocumentZindex.mjs -- terser dist/DocumentZindex.mjs -o dist/DocumentZindex.min.mjs -c ecma=2020 --mangle --ecma 2020 --module --source-map base=dist,filename=DocumentZindex.min.mjs,includeSources",
 		"_ts-watch:compress-minify": "onchange -f add -f change -v dist/DocumentZindex.min.mjs -- brotlin compress dist/DocumentZindex.min.mjs -m 1",
-		"_ts-watch:dts-minify": "onchange -f add -f change -v dist/DocumentZindex.mjs.d.ts -- cpy dist/DocumentZindex.mjs.d.ts dist --rename=DocumentId.min.mjs.d.ts",
+		"_ts-watch:dts-minify": "onchange -f add -f change -v dist/DocumentZindex.mjs.d.ts -- cpy dist/DocumentZindex.mjs.d.ts dist --rename=DocumentZindex.min.mjs.d.ts",
 		"ts-watch": "run-p _ts-watch:*"
 	},
 	"repository": {
