@@ -2,7 +2,31 @@
 	"name": "@saekitominaga/document-maximum-zindex",
 	"version": "1.1.0",
 	"description": "Get the maximum value of z-index in the Document.",
+	"homepage": "https://github.com/SaekiTominaga/document-maximum-zindex#readme",
+	"bugs": {
+		"url": "https://github.com/SaekiTominaga/document-maximum-zindex/issues"
+	},
+	"license": "MIT",
+	"author": "Saeki Tominaga",
+	"files": [
+		"dist",
+		"src"
+	],
 	"type": "module",
+	"browser": "dist/DocumentZindex.js",
+	"types": "dist/DocumentZindex.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SaekiTominaga/document-maximum-zindex.git"
+	},
+	"scripts": {
+		"_build:tsc": "tsc -w",
+		"_build:compress": "onchange -f add -f change -v dist/DocumentZindex.js -- brotlin compress dist/DocumentZindex.js -m 1",
+		"_build:minify": "onchange -f add -f change -v dist/DocumentZindex.js -- terser dist/DocumentZindex.js -o dist/DocumentZindex.min.js -c ecma=2020 --mangle --ecma 2020 --module --source-map content='dist/DocumentZindex.js.map',filename='DocumentZindex.js',includeSources,url='DocumentZindex.min.js.map'",
+		"_build:minify-compress": "onchange -f add -f change -v dist/DocumentZindex.min.js -- brotlin compress dist/DocumentZindex.min.js -m 1",
+		"_build:minify-declaration": "onchange -f add -f change -v dist/DocumentZindex.d.ts -- cpy dist/DocumentZindex.d.ts dist --rename=DocumentZindex.min.d.ts",
+		"build": "run-p _build:*"
+	},
 	"devDependencies": {
 		"@types/w3c-css-typed-object-model-level-1": "^20180410.0.2",
 		"@typescript-eslint/eslint-plugin": "^4.11.1",
@@ -17,26 +41,6 @@
 		"terser": "^5.5.1",
 		"typescript": "^4.1.3"
 	},
-	"main": "dist/DocumentZindex.esm.js",
-	"types": "dist/DocumentZindex.esm.d.ts",
-	"scripts": {
-		"_ts-watch:tsc": "tsc -w",
-		"_ts-watch:compress": "onchange -f add -f change -v dist/DocumentZindex.esm.js -- brotlin compress dist/DocumentZindex.esm.js -m 1",
-		"_ts-watch:minify": "onchange -f add -f change -v dist/DocumentZindex.esm.js -- terser dist/DocumentZindex.esm.js -o dist/DocumentZindex.min.esm.js -c ecma=2020 --mangle --ecma 2020 --module --source-map base=dist,filename=DocumentZindex.esm.js,includeSources",
-		"_ts-watch:compress-minify": "onchange -f add -f change -v dist/DocumentZindex.min.esm.js -- brotlin compress dist/DocumentZindex.min.esm.js -m 1",
-		"_ts-watch:dts-minify": "onchange -f add -f change -v dist/DocumentZindex.esm.d.ts -- cpy dist/DocumentZindex.esm.d.ts dist --rename=DocumentZindex.min.esm.d.ts",
-		"ts-watch": "run-p _ts-watch:*"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/SaekiTominaga/document-maximum-zindex.git"
-	},
-	"author": "Saeki Tominaga",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/SaekiTominaga/document-maximum-zindex/issues"
-	},
-	"homepage": "https://github.com/SaekiTominaga/document-maximum-zindex#readme",
 	"publishConfig": {
 		"access": "public"
 	}
