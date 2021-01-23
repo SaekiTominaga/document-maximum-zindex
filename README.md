@@ -10,7 +10,7 @@ Get maximum value of `z-index` in Document.
 
 ## Examples
 
-```
+```JavaScript
 import DocumentId from '@saekitominaga/document-maximum-zindex';
 
 const documentZindex = new DocumentId();
