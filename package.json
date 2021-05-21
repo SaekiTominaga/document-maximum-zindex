@@ -13,9 +13,9 @@
 		"src"
 	],
 	"type": "module",
-	"main": "dist/DocumentZindex.js",
-	"module": "dist/DocumentZindex.js",
-	"types": "dist/DocumentZindex.d.ts",
+	"main": "dist/DocumentMaximumZindex.js",
+	"module": "dist/DocumentMaximumZindex.js",
+	"types": "dist/DocumentMaximumZindex.d.ts",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SaekiTominaga/document-maximum-zindex.git"

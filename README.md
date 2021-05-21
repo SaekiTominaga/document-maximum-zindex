@@ -11,15 +11,16 @@ Get maximum value of `z-index` in Document.
 ## Examples
 
 ```JavaScript
-import DocumentId from '@saekitominaga/document-maximum-zindex';
+import DocumentMaximumZindex from '@saekitominaga/document-maximum-zindex';
 
-const documentZindex = new DocumentId();
-documentZindex.getMaximum();
-documentZindex.getMaximum('#foo > .bar');
+const documentMaximumZindex = new DocumentMaximumZindex();
+documentMaximumZindex.getMaximum();
+documentMaximumZindex.getMaximum('#foo > .bar');
 ```
 
 ## Methods
 
-| Name | Returns | Description |
-|-|-|-|
-| getMaximum(selectors = 'body *') | {number} Maximum value of `z-index` inside the target element | Get maximum value of `z-index` inside the target element |
+<dl>
+<dt><code>getMaximum(selectors = 'body *'): number</code></dt>
+<dd>Get maximum value of <code>z-index</code> inside the target element</dd>
+</dl>

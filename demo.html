@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<title>`DocumentZindex.js` Demo</title>
+		<title>`DocumentMaximumZindex.js` Demo</title>
 		<style>
 			input,
 			button {
@@ -19,7 +19,7 @@
 			}
 		</style>
 		<script type="module">
-			import DocumentZindex from './dist/DocumentZindex.js';
+			import DocumentMaximumZindex from './dist/DocumentMaximumZindex.js';
 
 			document.getElementById('get').addEventListener(
 				'click',
@@ -28,15 +28,15 @@
 
 					const outputElement = document.getElementById('output');
 
-					const documentZindex = new DocumentZindex();
-					outputElement.value = documentZindex.getMaximum(selector);
+					const documentMaximumZindex = new DocumentMaximumZindex();
+					outputElement.value = documentMaximumZindex.getMaximum(selector);
 				},
 				{ passive: true }
 			);
 		</script>
 	</head>
 	<body>
-		<h1>`DocumentZindex.js` Demo</h1>
+		<h1>`DocumentMaximumZindex.js` Demo</h1>
 
 		<p><code>&lt;span style="z-index: 100"&gt;&lt;/span&gt;</code> is embedded here. <span style="z-index: 100"></span></p>
 

@@ -12,4 +12,4 @@ export default class {
      */
     getMaximum(selectors?: string): number;
 }
-//# sourceMappingURL=DocumentZindex.d.ts.map
+//# sourceMappingURL=DocumentMaximumZindex.d.ts.map
